@@ -6,6 +6,14 @@ def hod(hrac):
         kostka = rd.randrange(1,7,1)
         
         if kostka != 6:
+def hod(hrac):
+    import random as rd
+    pocet = 1
+    
+    while True:
+        kostka = rd.randrange(1,7,1)
+        
+        if kostka != 6:
             pocet += 1
             print(kostka,end = " ")
                         
@@ -13,8 +21,7 @@ def hod(hrac):
         else:
             print(kostka,end = " ")
             print("", end = "\n")
-            print(f"Hráč {hrac} získal: {pocet}")
-            
+                        
             return pocet
 
 def vitez(a,b,c,d):
@@ -29,7 +36,9 @@ def vitez(a,b,c,d):
 
 def hra():
     for hrac in range(1,5):
-        hod(hrac)
+        
+        pocet = hod(hrac)
+        print(f"Hráč {hrac} získal: {pocet}")
     
     
 

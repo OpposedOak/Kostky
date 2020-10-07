@@ -9,11 +9,9 @@ def hod(hrac):
             pocet += 1
             print(kostka,end = " ")
                         
-            
         else:
             print(kostka,end = " ")
             print("", end = "\n")
-                        
             return pocet
 
 def hra():
@@ -31,15 +29,5 @@ def hra():
             body = pocet
             
         print(f"Vítězem je hráč: {vitez}")
-
-hra()
-
-def hra():
-    for hrac in range(1,5):
-        
-        pocet = hod(hrac)
-        print(f"Hráč {hrac} získal: {pocet}")
-    
-    
 
 hra()

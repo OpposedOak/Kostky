@@ -1,4 +1,4 @@
-def hod():
+def hod(hrac):
     import random as rd
     pocet = 1
     
@@ -12,19 +12,25 @@ def hod():
             
         else:
             print(kostka,end = " ")
-            print(" -- ", end = "")
-            print(f"Pocet hodu: {pocet}")
+            print("", end = "\n")
+            print(f"Hráč {hrac} získal: {pocet}")
+            
             return pocet
 
 def vitez(a,b,c,d):
+
+    hraci = [a,b,c,d]
+    
+    
+    vitez = max(hraci)
+    print(f"Vitezem je {vitez}")
     
     
 
 def hra():
+    for hrac in range(1,5):
+        hod(hrac)
     
-    hrac1 = hod()
-    hrac2 = hod() 
-    hrac3 = hod() 
-    hrac4 = hod() 
+    
 
 hra()

@@ -1,9 +1,11 @@
+import random as rd
+
 def hod(hrac):
-    import random as rd
+    
     pocet = 1
     
     while True:
-        kostka = rd.randrange(1,7,1)
+        kostka = rd.randrange(1,7)
         
         if kostka != 6:
             pocet += 1
@@ -28,6 +30,6 @@ def hra():
             vitez = hrac
             body = pocet
             
-        print(f"Vítězem je hráč: {vitez}")
+    print(f"Vítězem je hráč: {vitez}")
 
 hra()
